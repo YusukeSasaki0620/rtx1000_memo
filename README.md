@@ -21,6 +21,7 @@ screenの終了は ctrl + a -> k -> y
 - コマンドの途中でも出る
 - タブ保管が結構効く
 - 設定周りをいじるのは基本admin -> save
+- 一部設定は再起動するまで有効に鳴らない
 
 ### よく使うコマンド一覧
 トップレベルコマンドは補完が聞きにくいのでメモ
@@ -57,8 +58,6 @@ IPをクライアント側に払い出せるところまで行けば、以降は
   - `date YYYY/MM/dd`
   - `time hh:mm:ss`
   - `timezone jst`
-- ntp設定
-  - `ntpdate jp.pool.ntp.org`
 - LANポートのIPv4設定
   - 以下のような感じで、必要に応じて
   - 固定（ローカルネット構築など）
@@ -73,10 +72,12 @@ IPをクライアント側に払い出せるところまで行けば、以降は
 - DNSサーバ設定
   - `dns server dhcp lan3`
 - NAT設定
-  - WAN-LANの転送設定をいれる
+  - WAN-LANの転送設定をいれる、デフォルトはipcp（PPP接続のとき）になっている
   - `nat descriptor type 1 masquerade`
   - `ip lan3 nat descriptor 1`
   - `nat descriptor address outer 1 primary`
+- ntp設定(RTXからネットが見える様になった段階のどこかで)
+  - `ntpdate jp.pool.ntp.org`
 
 出来上がるconfig
 
