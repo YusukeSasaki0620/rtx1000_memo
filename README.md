@@ -1,6 +1,7 @@
 # 概要
 YAMAHA RTX1000の備忘録メモ
-
+マニュアル
+http://www.rtpro.yamaha.co.jp/RT/manual/Rev.9.00.01/Users.pdf
 ## 接続関係
 ### シリアル接続
 MacOSの場合、USBにシリアルポート変換機器をつなぐとUSB機器としてそのまま使用できる
