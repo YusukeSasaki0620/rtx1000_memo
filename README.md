@@ -1,7 +1,10 @@
 # 概要
-YAMAHA RTX1000の備忘録メモ
-マニュアル
+YAMAHA RTX1000の備忘録メモ\
+マニュアル\
 http://www.rtpro.yamaha.co.jp/RT/manual/Rev.9.00.01/Users.pdf
+
+Luaスクリプトを動かせる機種のほうが良かったかも、、、、なるほど\
+https://network.yamaha.com/setting/router_firewall/monitor/lua_script/manual
 ## 接続関係
 ### シリアル接続
 MacOSの場合、USBにシリアルポート変換機器をつなぐとUSB機器としてそのまま使用できる
@@ -38,8 +41,8 @@ screenの終了は ctrl + a -> k -> y
 
 
 ### 初回やっておくこと
-IPをクライアント側に払い出せるところまで行けば、以降はLANを差すだけでGUI設定できる。
-初期化状態でも、macアドレスをipv6に変換するして直接アクスすればできる、、、らしい。
+IPをクライアント側に払い出せるところまで行けば、以降はLANを差すだけでGUI設定できる。\
+初期化状態でも、macアドレスをipv6に変換するして直接アクスすればできる、、、らしい。\
 (ref: ブロードバンドルーター最小構成 http://www.rtpro.yamaha.co.jp/RT/docs/example/broadband/pppoe-private.html )
 
 - 初期化
